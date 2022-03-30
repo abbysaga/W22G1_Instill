@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "607603994985",
+    "project_id": "instill-csis3175",
+    "storage_bucket": "instill-csis3175.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607603994985:android:4e5eddf53dfd3b7c270df8",
+        "android_client_info": {
+          "package_name": "com.example.instill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607603994985-ogigq9lagi2qn5gkgb7idk2rguguv215.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4Csyf32yheZI6S7kDLIreo-xHsv9_YLc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607603994985-ogigq9lagi2qn5gkgb7idk2rguguv215.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

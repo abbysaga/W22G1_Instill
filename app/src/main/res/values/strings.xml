@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Instill</string>
+    <string name="EmailHint">Email</string>
+    <string name="PasswordHint">Password</string>
+    <string name="PasswordShow">Show</string>
+    <string name="LoginButton">Login</string>
+    <string name="PasswordForgot">Forgot Password?</string>
+    <string name="RegisterHere">Create new account?</string>
+    <string name="appBackground">Instill background</string>
+    <string name="appLogo">Instill Logo</string>
+    <string name="resetPassword">Reset Password</string>
+    <string name="resetPasswordTextDesc">Link will be sent to email address inputted below:</string>
+    <string name="NameHint">Name</string>
+    <string name="PhoneHint">Phone Number</string>
+    <string name="BirthdayHint">Birthdate</string>
+    <string name="ConfirmPasswordHint">Confirm Password</string>
+    <string name="iconPhone">Phone icon</string>
+    <string name="switch_male">Male</string>
+    <string name="switch_female">Female</string>
+    <string name="iconBirthday">birthday icon</string>
+    <string name="iconEmail">Email icon</string>
+    <string name="iconName">Name icon</string>
+    <string name="iconPassword">Password icon</string>
+    <string name="iconConfirmPwd">Confirm password icon</string>
+    <string name="iconMale">Male icon</string>
+    <string name="iconFemale">Female icon</string>
+    <string name="RegisterButton">Register</string>
+</resources>
