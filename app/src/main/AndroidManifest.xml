@@ -18,6 +18,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Instill">
         <activity
+            android:name=".activities.CreateResumeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.WebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.instill.activities.AnalysisActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.instill.activities.PDFViewerActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.MainActivity"
             android:exported="false" />
         <activity
