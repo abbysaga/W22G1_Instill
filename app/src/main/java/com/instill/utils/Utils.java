@@ -22,4 +22,24 @@ public class Utils {
         }
     }
 
+    public static List<File> getAllAppPDFFiles() {
+        List<File> fileList = new ArrayList<>();
+        String pdfPattern = ".pdf";
+        File dir = new File(AppFolderPath);
+        File[] filesList = dir.listFiles();
+        if (filesList != null) {
+            for (File file : filesList) {
+                if (!file.isDirectory() && file.getName().endsWith(pdfPattern)) {
+                    fileList.add(file);
+                }
+            }
+        }
+        return fileList;
+    }
+
+    public static String showLastModified(long lastModified) {
+        Date d = new Date(lastModified);
+        return d.toString();
+    }
+
 }
