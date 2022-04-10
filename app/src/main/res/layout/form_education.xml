@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/ten_dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/seven_dp"
+        android:text="Add Education Details"
+        android:textColor="@color/black"
+        android:textSize="@dimen/twenty_sp" />
+
+    <EditText
+        android:id="@+id/edtUniversity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:background="@drawable/edt_background"
+        android:hint="@string/university_school"
+        android:padding="@dimen/fifteen_dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteen_sp" />
+
+    <EditText
+        android:id="@+id/edtDegree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:background="@drawable/edt_background"
+        android:hint="@string/degree_course"
+        android:padding="@dimen/fifteen_dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteen_sp" />
+
+    <EditText
+        android:id="@+id/edtGrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:background="@drawable/edt_background"
+        android:hint="@string/grade_score"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/fifteen_dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteen_sp" />
+
+    <EditText
+        android:id="@+id/edtYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:background="@drawable/edt_background"
+        android:hint="@string/year"
+        android:inputType="number"
+        android:padding="@dimen/fifteen_dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteen_sp" />
+
+    <LinearLayout
+        android:id="@+id/linBtns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDismiss"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="@string/dismiss" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="@string/save"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</LinearLayout>

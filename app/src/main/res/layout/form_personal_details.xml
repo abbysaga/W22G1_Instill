@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="450dp"
+        android:orientation="vertical"
+        android:padding="@dimen/ten_dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/seven_dp"
+            android:text="@string/personal_details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twenty_sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:background="@drawable/edt_background"
+            android:hint="@string/first_name"
+            android:padding="@dimen/fifteen_dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtMiddleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:background="@drawable/edt_background"
+            android:hint="@string/middle_name"
+            android:padding="@dimen/fifteen_dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:background="@drawable/edt_background"
+            android:hint="@string/last_name"
+            android:padding="@dimen/fifteen_dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:background="@drawable/edt_background"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/fifteen_dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtLinkedIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:background="@drawable/edt_background"
+            android:hint="@string/linkedin_link"
+            android:padding="@dimen/fifteen_dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtAddress1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:background="@drawable/edt_background"
+            android:hint="@string/address"
+            android:padding="@dimen/fifteen_dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:background="@drawable/edt_background"
+            android:hint="@string/state"
+            android:padding="@dimen/fifteen_dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:background="@drawable/edt_background"
+            android:hint="@string/country"
+            android:padding="@dimen/fifteen_dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:background="@drawable/edt_background"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:padding="@dimen/fifteen_dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <LinearLayout
+            android:id="@+id/linBtns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDismiss"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="@string/dismiss" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAdd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="@string/save"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
