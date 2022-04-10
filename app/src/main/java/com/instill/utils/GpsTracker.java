@@ -18,7 +18,7 @@ import android.util.Log;
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.ActivityCompat;
 
-//https://howtodoandroid.com/get-current-location-android/
+//  https://howtodoandroid.com/get-current-location-android/
 
 public class GpsTracker extends Service implements LocationListener {
     private final Context mContext;
