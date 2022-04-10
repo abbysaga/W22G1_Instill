@@ -12,6 +12,7 @@ dependencyResolutionManagement {
         google()
         jcenter()
         mavenCentral()
+        jcenter()
     }
 }
 rootProject.name = "Instill"
