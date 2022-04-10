@@ -7,12 +7,7 @@ import java.util.List;
 
 public class Utils {
 
-    public static final String AppFolderPath = Environment.getExternalStorageDirectory() + "/Instill";
-
-    public static final int EDUCATION = 0;
-    public static final int EXPERIENCE = 1;
-    public static final int SKILLS = 2;
-    public static final int PROJECTS = 3;
+    public static String AppFolderPath;
 
     public static final int EDUCATION = 0;
     public static final int EXPERIENCE = 1;
