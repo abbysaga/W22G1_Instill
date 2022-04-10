@@ -23,7 +23,7 @@ public class WebViewActivity extends AppCompatActivity {
         suggestion = (Suggestion) getIntent().getSerializableExtra("suggestion");
         findViewById(R.id.imageViewBack).setOnClickListener(view -> onBackPressed());
         ((TextView) findViewById(R.id.txtHeading)).setText(suggestion.title);
-        webView = findViewById(R.id.webView);
+//        webView = findViewById(R.id.webView);
 
         webView.setWebViewClient(new MyWebViewClient());
 

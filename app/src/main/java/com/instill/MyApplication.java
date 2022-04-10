@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.instill.database.SkillEnhancerDatabase;
 import com.instill.utils.DataBaseUtil;
+import com.instill.utils.Utils;
 
 public class MyApplication extends Application {
 
@@ -12,6 +13,7 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        Utils.AppFolderPath = getFilesDir() + "/Instill";
         skillEnhancerDatabase = DataBaseUtil.getDatabaseInstance(this);
     }
 

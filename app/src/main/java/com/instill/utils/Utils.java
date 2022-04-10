@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Utils {
 
-    public static final String AppFolderPath = Environment.getExternalStorageDirectory() + "/Instill";
+    public static String AppFolderPath;
 
     public static void checkAndCreateFolder() {
         try {
