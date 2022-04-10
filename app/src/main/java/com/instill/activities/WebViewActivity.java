@@ -5,6 +5,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,17 +21,21 @@ public class WebViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_view);
-        suggestion = (Suggestion) getIntent().getSerializableExtra("suggestion");
-        findViewById(R.id.imageViewBack).setOnClickListener(view -> onBackPressed());
-        ((TextView) findViewById(R.id.txtHeading)).setText(suggestion.title);
-//        webView = findViewById(R.id.webView);
 
-        webView.setWebViewClient(new MyWebViewClient());
+        if (getIntent() != null && getIntent().hasExtra("suggestion")) {
+            findViewById(R.id.imageViewBack).setOnClickListener(view -> onBackPressed());
+            webView = findViewById(R.id.webView);
+            suggestion = (Suggestion) getIntent().getSerializableExtra("suggestion");
+            ((TextView) findViewById(R.id.txtHeading)).setText(suggestion.title);
+            webView.loadUrl(suggestion.link);
+            webView.setWebViewClient(new MyWebViewClient());
 
-        WebSettings webSettings = webView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-
-        webView.loadUrl(suggestion.link);
+            WebSettings webSettings = webView.getSettings();
+            webSettings.setJavaScriptEnabled(true);
+        } else {
+            Toast.makeText(this, "No data found. Exiting", Toast.LENGTH_SHORT).show();
+            finish();
+        }
 
     }
 
@@ -40,6 +45,7 @@ public class WebViewActivity extends AppCompatActivity {
             webView.loadUrl(url); // load the url
             return true;
         }
+
     }
 
     @Override

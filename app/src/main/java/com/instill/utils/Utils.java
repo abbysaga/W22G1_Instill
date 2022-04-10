@@ -1,7 +1,5 @@
 package com.instill.utils;
 
-import android.os.Environment;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
@@ -10,6 +8,11 @@ import java.util.List;
 public class Utils {
 
     public static String AppFolderPath;
+
+    public static final int EDUCATION = 0;
+    public static final int EXPERIENCE = 1;
+    public static final int SKILLS = 2;
+    public static final int PROJECTS = 3;
 
     public static void checkAndCreateFolder() {
         try {
