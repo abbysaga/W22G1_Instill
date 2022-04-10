@@ -228,28 +228,24 @@ public class DialogUtils {
         btnDismiss.setOnClickListener(v -> dialog.dismiss());
         btnAdd.setOnClickListener(v -> {
 //            check validations before adding data
-            SkillsModel skil = new SkillsModel();
             SkillsModel selectedSkillModel = skillsModelArrayList.get(spinnerSkills.getSelectedItemPosition());
 //            if (skillsModelArrayList.contains(spinnerSkills.getSelectedItem())) {
 //            }
-            skil.setCourseId(selectedSkillModel.getCourseId());
-            skil.skillId = selectedSkillModel.skillId;
-            skil.setSkillName((String) spinnerSkills.getSelectedItem());
             switch (formSkillsRadiogroup.getCheckedRadioButtonId()) {
                 case R.id.radioBeginner:
-                    skil.setLevel("Beginner");
+                    selectedSkillModel.setLevel("Beginner");
                     break;
                 case R.id.radioIntermediate:
-                    skil.setLevel("Intermediate");
+                    selectedSkillModel.setLevel("Intermediate");
                     break;
                 case R.id.radioAdvanced:
-                    skil.setLevel("Advanced");
+                    selectedSkillModel.setLevel("Advanced");
                     break;
                 case R.id.radioExpert:
-                    skil.setLevel("Expert");
+                    selectedSkillModel.setLevel("Expert");
                     break;
             }
-            dialogClickListener.onItemClick(skil);
+            dialogClickListener.onItemClick(selectedSkillModel);
             dialog.dismiss();
         });
         dialog.show();
